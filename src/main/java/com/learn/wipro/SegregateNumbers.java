@@ -54,7 +54,6 @@ public class SegregateNumbers {
         String[] numArray = numbers.split(" ");
         approach1(numArray);
         approach2(numArray);
-        approach3(numArray);
     }
 
     public static void approach1(String[] numArray) {
@@ -92,16 +91,6 @@ public class SegregateNumbers {
         }
         print(evenNumbers);
         print(oddNumbers);
-        System.out.println();
-        System.out.println("Time(ms) taken: "+(System.currentTimeMillis()-start));
-    }
-
-    private static void approach3(String[] numArray) {
-
-        long start = System.currentTimeMillis();
-        Arrays.sort(numArray);
-        print(0, numArray);
-        print(1, numArray);
         System.out.println();
         System.out.println("Time(ms) taken: "+(System.currentTimeMillis()-start));
     }
